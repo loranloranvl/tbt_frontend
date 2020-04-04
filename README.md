@@ -1,24 +1,25 @@
-# tbt_frontend
+# TBT_Frontend
 
-## Project setup
+## 环境配置
+安装nodejs
+
+## 模组安装
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 编译并监听localhost
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 编译并输出到public文件夹
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 代码诊断
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
