@@ -30,7 +30,7 @@
           href="http://www.hdu.edu.cn"
           title="杭州电子科技大学"
           target="_blank"
-          class="w3-hover-text-green w3-margin-right"
+          class="w3-hover-text-blue w3-margin-right"
         >杭州电子科技大学</a>
         某吴姓菜鸡和他的大腿
       </p>

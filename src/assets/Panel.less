@@ -2,12 +2,25 @@
     width: 90%;
     max-width: 1200px;
     margin: auto;
+
+    button {
+        display: block;
+        margin: 5px auto;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
 }
 
-#form, #map, #note {
+#cars-wrapper,
+#map,
+#note {
     width: 100%;
     min-height: 60px;
     margin: 10px 0;
+}
+
+#map {
+    padding: 20px;
 }
 
 #note {
@@ -16,4 +29,69 @@
     font-size: 24px;
     color: #666;
     letter-spacing: 1px;
+}
+
+#cars-label {
+    font-size: 24px;
+    color: #aaa;
+    letter-spacing: 5px;
+}
+
+#cars-wrapper {
+    min-height: 80px;
+}
+
+#cars {
+    .car {
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        position: relative;
+
+        .fa-truck {
+            color: #333;
+            font-size: 80px;
+        }
+
+        .times {
+            font-size: 30px;
+            color: #333;
+            position: relative;
+            bottom: 17px;
+            left: 5px;
+        }
+
+        .quantity {
+            font-size: 40px;
+            color: #333;
+            position: relative;
+            bottom: 13px;
+            left: 7px;
+        }
+
+        .weight {
+            position: absolute;
+            top: 30px;
+            left: 42px;
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
+
+#car-add {
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    margin-left: 16px;
+
+    .fa-plus-circle {
+        font-size: 60px;
+        color: #999;
+        cursor: pointer;
+
+        &:hover {
+            color: #333;
+        }
+    }
 }
