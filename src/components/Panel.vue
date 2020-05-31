@@ -289,10 +289,22 @@ export default {
     },
     submit: function() {
       const vm = this;
+      const oldm = vm.distance_matrix;
+      vm.distance_matrix = [];
+      for (let i = 0; i < vm.loc.length; i++) {
+        const row = [];
+        for (let j = 0; j < vm.loc.length; j++) {
+          const dx = Math.abs(vm.loc[i].x - vm.loc[j].x);
+          const dy = Math.abs(vm.loc[i].y - vm.loc[j].y);
+          const distance = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
+          row.push(Math.round(distance));
+        }
+        vm.distance_matrix.push(row);
+      }
       const data = {
         mode: vm.mode,
         distance_matrix: vm.distance_matrix,
-        num_vehicles: vm.num_vehicles,
+        num_vehicles: vm.vehicle_capacities.length,
         vehicle_capacities: vm.vehicle_capacities,
         demands: vm.demands,
         dep_starts: [0, 0, 0, 0],
